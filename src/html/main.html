@@ -7,6 +7,9 @@
       body {
         font-size: 14pt;
         background-color: #FAF9F9;
+        background-image: url("../img/background.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
       }
       
       #header {
@@ -58,11 +61,13 @@
       }
       #container {
         width: 100%;
-        height: 1200px;
+        height: 1220px;
+        opacity: 0.8;
       }
+      
       #content {
         width: 70%;
-        height: 1200px;
+        height: 1160px;
         border-left: 1px solid grey;
         border-right: 1px solid grey;
         margin: 0 auto;
@@ -163,10 +168,23 @@
         height: 600px;
         border: 2px solid lightgrey;
       }
+      
+      footer {
+        background-color: dodgerblue;
+        height: 50px;
+      }
+      #footer {
+/*        background-color: dodgerblue;*/
+        width: 20%;
+        height: auto;
+        margin: 0 auto;
+        padding-top: 1px;
+      }
       a {
         color: black;
         text-decoration: none;
       }
+      
     </style>
   </head>
   
@@ -254,6 +272,9 @@
             <span class="feed_tline"></span>
             <span class="feedify_feedback_bottom" style="display: block;height: 22px;border-radius: 0px 0px 0px 7px;position: absolute;text-align: center;width: 100%;left: 0px;bottom: -26px;">     <span class="feed_dot" style="border-radius: 0px 0px 0px 7px;"></span>     <span class="feed_dot"></span>     <span class="feed_dot"></span>     </span>        
             </label>    <img src="https://feedify.net/front/images/chaticon-2.png" id="feedback_2" style="width:100%;background-color: #26b99a;border-radius: 100%;">    </div>    </div>    <div class="feedback_form" style="margin-left: 0px;background-color:#000000;undefined"></div><style>#fsidebar_widget{    float: left;position: relative;}.feedback_form { position: fixed; right: 0;top: 50%;/* width: 50%; */display: block;background-color: #fff;height: 3px;}#feedback_2{display: none;}span.feedify_feedback_bottom:after {content: " ";position: absolute;width: 10px;height: 10px;top: 18px;left: 10px;border-left: 18px solid transparent;border-top: 8px solid #339966;box-sizing: border-box;-webkit-backface-visibility: visible!important;}span.feed_dot{width: 33.33%;height: 18px;display: block;float:left;position: relative;overflow: hidden;-webkit-backface-visibility: visible !important;-webkit-backface-visibility: visible !important;}span.feed_dot:first-child:after{left: 5px;-webkit-backface-visibility: visible !important;}span.feed_dot:after{content: '';position: absolute;left: 4px;top: 4px;border-radius: 100%;width: 5px;height: 5px;box-shadow: 0px 0px 0px 65px #339966;-webkit-backface-visibility: visible !important;}span.feed_dot:last-child:after{left: 2px;-webkit-backface-visibility: visible !important;}.feed_tline{overflow: hidden;width: 100%;height: 5px;display: block;position: absolute;bottom: -4px;left: 0px;}span.feed_tline:after {content: '';position: absolute;left: 4px;top: 0px;border-radius: 15%;width: 25px;height: 3px;box-shadow: 0px 0px 0px 27px #339966;-webkit-backface-visibility: visible !important;}@media (max-width: 768px){div#fsidebar_widget{z-index: 999;right: 17px;bottom: 5px;position: fixed;width:48px;height: 48px;-webkit-box-shadow: 0 4px 5px -1px rgba(0,0,0,0.5);-moz-box-shadow: 0 4px 5px -1px rgba(0,0,0,0.5);    box-shadow: 0 4px 5px -1px rgba(0,0,0,0.5);border-radius: 100%;}div#fsidebar_widget.fsidebar_left{left: 17px!important;}#feedback_2{display: block;}#feedback_1{display: none;}.feedback_form, .feedify_feedback_tab{display: none!important;}}</style><style>.animate{-webkit-animation-duration:.5s;animation-duration:.5s;-webkit-animation-fill-mode:both;animation-fill-mode:both;-webkit-transition-timing-function:cubic-bezier(.86,0,.07,1);transition-timing-function:cubic-bezier(.86,0,.07,1);opacity:0;display:none}.rotated{-webkit-animation-name:rotateInUpRight;animation-name:rotateInUpRight}.rotatedBack{-webkit-animation-name:rotateOutDownRight;animation-name:rotateOutDownRight}@-webkit-keyframes rotateInUpRight{from{                -webkit-transform-origin:right;                transform-origin:right;                -webkit-transform:rotate3d(0,0,1,-15deg) scale(.8);                transform:rotate3d(0,0,1,-15deg) scale(.8);opacity:0;            }to{                -webkit-transform-origin:right;                transform-origin:right;                -webkit-transform:none;                transform:none;opacity:1;            }        }        @keyframes rotateInUpRight{            from{                -webkit-transform-origin:right;                transform-origin:right;                -webkit-transform:rotate3d(0,0,1,-15deg) scale(.8);                transform:rotate3d(0,0,1,-15deg) scale(.8);                opacity:0;            }to{                -webkit-transform-origin:right;                transform-origin:right;                -webkit-transform:none;                transform:none;                opacity:1;            }        }@-webkit-keyframes rotateOutDownRight{from{-webkit-transform-origin:right;transform-origin:right;opacity:1}to{-webkit-transform-origin:right;transform-origin:right;-webkit-transform:rotate3d(0,0,1,-15deg) scale(.8);transform:rotate3d(0,0,1,-15deg) scale(.8);opacity:0}}@keyframes rotateOutDownRight{from{-webkit-transform-origin:right;transform-origin:right;opacity:1}to{-webkit-transform-origin:right;transform-origin:right;-webkit-transform:rotate3d(0,0,1,-15deg) scale(.8);transform:rotate3d(0,0,1,-15deg) scale(.8);opacity:0}}.rotatedLeft{-webkit-animation-name:rotateInUpLeft;animation-name:rotateInUpLeft}.rotatedBackLeft{-webkit-animation-name:rotateOutDownLeft;animation-name:rotateOutDownLeft}@-webkit-keyframes rotateInUpLeft{            from {                -webkit-transform-origin:left;                transform-origin: left;                -webkit-transform: rotate3d(0, 0, 1, 15deg) scale(.8);                transform: rotate3d(0, 0, 1, 15deg) scale(.8);                opacity: 0;            }            to {                -webkit-transform-origin:left;                transform-origin: left;                -webkit-transform:none;                transform: none;                opacity: 1;            }        }        @keyframes rotateInUpLeft{            from {                -webkit-transform-origin:left;                transform-origin: left;                -webkit-transform: rotate3d(0, 0, 1, 15deg) scale(.8);                transform: rotate3d(0, 0, 1, 15deg) scale(.8);                opacity: 0;            }            to {                -webkit-transform-origin:left;                transform-origin: left;                -webkit-transform:none;                transform: none;                opacity: 1;            }        }@-webkit-keyframes rotateOutDownLeft{            from {                -webkit-transform-origin:left;                transform-origin:left;                opacity: 1;            }            to {                -webkit-transform-origin:left;                transform-origin:left;                -webkit-transform: rotate3d(0, 0, 1, 15deg) scale(.8);                transform: rotate3d(0, 0, 1, 15deg) scale(.8);                opacity: 0;            }        }        @keyframes rotateOutDownLeft{            from {                -webkit-transform-origin:left;                transform-origin:left;                opacity: 1;            }            to {                -webkit-transform-origin:left;                transform-origin:left;                -webkit-transform: rotate3d(0, 0, 1, 15deg) scale(.8);                transform: rotate3d(0, 0, 1, 15deg) scale(.8);                opacity: 0;            }        }</style><iframe id="feedify_feedback_frame" src="https://feedify.net/thirdparty/feedbackembed?windowwidth=1519" class="animate" scrolling="no" overflow-x="hidden" style="overflow-x: hidden; margin-right: 0px; border: none; position: relative; display: none; width: 490px !important; height: 560px !important; opacity: 0;"></iframe></div>
+      <footer>
+        <div id="footer"><p>2018 CST Project1 Group7</p></div>
+      </footer>
   </body>
   
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
