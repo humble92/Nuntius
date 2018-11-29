@@ -8,11 +8,6 @@
     <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.4.1/firebaseui.css" />
 </head>
 <body>
-    <!-- The surrounding HTML is left untouched by FirebaseUI.
-         Your app may use that space for branding, controls and other customizations.-->
-    <h1>Welcome to Nuntius</h1>
-    <div id="firebaseui-auth-container"></div>
-    
     <script src="../js/setup_firebase.js"></script>
 
     <script>
@@ -33,7 +28,7 @@
       },
       // Will use popup for IDP Providers sign-in flow instead of the default, redirect.
       signInFlow: 'popup',
-      signInSuccessUrl: 'main.html',
+      signInSuccessUrl: 'main_processing.html',
       signInOptions: [
         // Leave the lines as is for the providers you want to offer your users.
         firebase.auth.GoogleAuthProvider.PROVIDER_ID,
@@ -44,7 +39,7 @@
         //firebase.auth.PhoneAuthProvider.PROVIDER_ID
       ],
       // Terms of service url.
-      tosUrl: 'main.html',
+      tosUrl: 'main_processing.html',
       // Privacy policy url.
       privacyPolicyUrl: 'main.html'
     };
@@ -54,8 +49,22 @@
     var ui = new firebaseui.auth.AuthUI(firebase.auth());
     ui.start('#firebaseui-auth-container', uiConfig);
 
+    //firebase.auth().getUser()
+    //    .then(function(userRecord) {
+    //      // See the UserRecord reference doc for the contents of userRecord.
+    //      console.log("Successfully fetched user data:", userRecord.toJSON());
+    //    })
+    //    .catch(function(error) {
+    //      console.log("Error fetching user data:", error);
+    //    });
     </script>
 
+    <!-- The surrounding HTML is left untouched by FirebaseUI.
+         Your app may use that space for branding, controls and other customizations.-->
+    <h1>Welcome to Nuntius</h1>
+    <div id="firebaseui-auth-container"></div>
+    <div id="loader"></div>
+    
 </body>
 </html>
 

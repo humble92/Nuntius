@@ -25,3 +25,9 @@ hs_err_pid*
 # dev. environment
 .DS_Store
 .firebase
+
+# credential
+src/js/setup_firebase.js
+
+# test file
+src/html/test.html
