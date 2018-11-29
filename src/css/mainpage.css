@@ -1,0 +1,111 @@
+body {
+  font-size: 14pt;
+  background-color: #FAF9F9;
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+
+#container {
+  width: 100%;
+  height: 1220px;
+  opacity: 0.8;
+}
+
+#content {
+  width: 70%;
+  height: 1160px;
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 50px;
+  background-color: white;
+}
+#announcement {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 20px;
+  border: 1px solid grey;
+  box-shadow: 2px 2px lightgrey;
+}
+.title-box {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+  background-color: #4286f4;
+
+}
+#mid-row {
+  width: 100;
+  height: 300px;
+  margin-bottom: 20px;
+}
+#calendar {
+  width: 49%;
+  height: 300px;
+  border: 2px solid grey;
+  box-shadow: 2px 2px lightgrey;
+  float: left;
+  margin-bottom: 20px;
+}
+#cal-mid {
+  margin: 0 auto;
+  padding-left: 20%;
+  width: 65%;
+  height: 70%;
+  background-image: url("../img/datepicker.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+#datepicker1 {
+  margin: 0 auto;
+  background-image: url("../img/datepicker.png")
+}
+#news {
+  width: 49%;
+  height: 300px;
+  border: 2px solid grey;
+  box-shadow: 2px 2px lightgrey;
+  float: right;
+  margin-bottom: 20px;
+}
+#quick-massage {
+  width: 100%;
+  height: 250px;
+  border: 2px solid grey;
+  box-shadow: 2px 2px lightgrey;
+  margin-bottom: 20px;
+}
+.title-text {
+  width: 45%;
+  height: auto;
+  float: left;
+  font-weight: bold;
+  font-size: 16pt;
+  margin: 0px 0px 10px 10px;
+}
+.title-text p{
+  margin: 8px 5px 5px 5px;
+}
+.more {
+  width: 10%;
+  height: auto;
+  float: right;
+  color: lightgrey;
+  margin: 0px;
+  text-align: right;
+}
+.more p {
+  margin: 10px 5px 5px 5px;
+}
+.more:hover {
+  color: yellow;
+}
+
+@media screen and (max-width: 800px) {
+
+        * { font-size: 0.9rem; }
+}
