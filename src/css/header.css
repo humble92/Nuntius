@@ -17,7 +17,9 @@
   width: 120px;
   height: 90px;
 }
-
+#logo:hover{
+  cursor: pointer;
+}
 #menu-icon {
   float: left;
   padding-right: 0px;
@@ -42,7 +44,7 @@
   height: 70px;
   margin: 10px;
   float: right;
-  background-color: black;
+  background-color: darkred;
   border: 2px solid white;
   border-radius: 50%;
   position: relative;

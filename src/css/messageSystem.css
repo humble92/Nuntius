@@ -1,0 +1,23 @@
+body {
+  font-size: 14pt;
+  background-color: #FAF9F9;
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+#container {
+  width: 100%;
+  height: 1220px;
+  opacity: 0.8;
+}
+#content {
+  width: 70%;
+  height: 1160px;
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 50px;
+  
+}
