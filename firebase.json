@@ -15,5 +15,6 @@
         "destination": "/index.html"
       }
     ]
-  }
+  },
+  "gcm_sender_id": "103953800507"
 }

@@ -1,0 +1,66 @@
+html, body {
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+li a {
+  text-decoration: underline;
+  color: #0288d1;
+}
+.mdl-grid {
+  max-width: 1024px;
+  margin: auto;
+}
+.mdl-layout__header-row {
+  padding: 0;
+}
+.quickstart-user-details-container {
+  margin-top: 20px;
+  line-height: 25px;
+}
+#quickstart-sign-in-status {
+  font-weight: bold;
+}
+pre {
+  overflow-x: scroll;
+  line-height: 18px;
+}
+code {
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+h3 {
+  background: url('/firebase-logo.png') no-repeat;
+  background-size: 40px;
+  padding-left: 50px;
+  color: white;
+}
+
+body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
+#home_body {
+    background-image: url("../img/50_plush-design-studio-483666-unsplash.jpg");
+    background-position: center;
+    -webkit-animation: backgroundScroll 12s linear 1;
+    -webkit-animation-fill-mode: forwards;
+    animation: backgroundScroll 12s linear 1;
+    animation-fill-mode: forwards;
+}
+@keyframes backgroundScroll {
+    from {background-position: 0px -200px;}
+    to {background-position: 0 -700px;}
+}
+
+#message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
+#message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
+#message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
+#message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
+#message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
+#message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
+#load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
+@media (max-width: 600px) {
+body, #message { margin-top: 0; background: white; box-shadow: none; }
+body { border-top: 16px solid #ffa100; }
+}
+
+
