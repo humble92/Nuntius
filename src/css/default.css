@@ -58,9 +58,26 @@ body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvet
 #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
 #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
 #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
+
 @media (max-width: 600px) {
-body, #message { margin-top: 0; background: white; box-shadow: none; }
-body { border-top: 16px solid #ffa100; }
+    body, #message { margin-top: 0; background: white; box-shadow: none; }
+    body { border-top: 16px solid #ffa100; }
 }
 
-
+#profile {
+    margin-top: 40px;
+}
+#profile textarea {
+    margin-top: 10px;
+    width: 111%;
+}
+#profile #submit {
+    margin-right: -13%;
+}
+#profile input[type="text"], #profile input[type="email"], #profile select {
+    width: 80%;
+    margin-left: 0px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
