@@ -57,18 +57,14 @@ body {
 #cal-mid {
   margin: 0 auto;
   padding: 0 10% 10% 10%;
-  width: 80%;
+  width: 90%;
   height: 70%;
-/*
-  background-image: url("../img/datepicker.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-*/
 }
 #cal-mid p {
   color: red;
-  font-size: 12pt;
-  overflow: hidden;
+/*  font-size: 14pt;*/
+  overflow: auto;
+  
 }
 #news {
   width: 49%;
@@ -112,7 +108,7 @@ body {
   float: right;
   color: lightgrey;
   margin: 0px;
-  padding-right: 10px;
+  padding-right: 15px;
   text-align: right;
   cursor: pointer;
 }
