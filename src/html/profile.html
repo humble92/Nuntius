@@ -36,7 +36,7 @@
       
     </div>
     <div id="container">
-     
+
       <div id="menu">
          <ul>
            <li><a href="messageSystem.html">Message System</a></li>
@@ -102,6 +102,7 @@
           </div>
           
         </form>          
+        <div class='notice' style='display:none'>Notice</div>
         </div>
 
       </div>
@@ -125,6 +126,14 @@
                phone: $("#phone").val(),
                role: $("#role").val(),
                intro: $("#intro").val()
+            }, function(error) {
+                if (error) {
+                    $('.notice').html("Something wrong happend. Try again!");
+                } else {
+                    $('.notice').html("Successfuly Updated!");
+                }
+                $('.notice').fadeIn(400).delay(5000).fadeOut(400);
+            }).then(function(){
             });
         });
   
