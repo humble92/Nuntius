@@ -15,7 +15,7 @@ $( document ).ready(function() {
                 user.getIdToken().then(function(accessToken) {
                     document.getElementById('sign-in-status').textContent = 'Signed in';
                     document.getElementById('sign-in').textContent = 'Sign out';
-                    document.getElementById('account-details').textContent = JSON.stringify({
+                    document.getElementById('#profile').textContent = JSON.stringify({
                         displayName: displayName,
                         email: email,
                         //emailVerified: emailVerified,
@@ -42,7 +42,7 @@ $( document ).ready(function() {
         initApp()
     });    
     
-    $("#userpic").on("click", function(e) {         // Logout button listener
+    $("#logout").on("click", function(e) {         // Logout button listener
         var promise = firebase.auth().signOut();          // Firebase Authenticated User Signout 
         promise.then(function(){
             window.location.href='/';

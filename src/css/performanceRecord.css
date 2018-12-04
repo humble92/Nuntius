@@ -1,9 +1,10 @@
 body {
   font-size: 14pt;
   background-color: #FAF9F9;
-  background-image: url("../img/background.jpg");
+  background-image: url("../img/background2.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  font-family: Verdana, sans-serif;
 }
 #container {
   width: 100%;
@@ -29,6 +30,7 @@ body {
   padding-top: 10px;
   background-color: #FCFCE1;
   box-shadow: 0px 1px grey;
+  overflow: hidden;
 
 }
 #title p {
@@ -46,7 +48,9 @@ body {
   width: 45%;
   height: 600px;
   float: right;
-  background-color: antiquewhite;
+  background-image: url("../img/menubg2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #performancecard {
   width: 100%;

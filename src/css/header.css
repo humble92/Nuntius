@@ -45,8 +45,10 @@
   height: 70px;
   margin: 10px;
   float: right;
-  background-color: darkred;
-  border: 2px solid white;
+  background-image: url("../img/user.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 1px solid white;
   border-radius: 50%;
   position: relative;
   cursor: pointer;
@@ -90,7 +92,8 @@
 #menu ul li:hover {
   color: chartreuse;
   cursor:wait;
-  transform: scale(1.1);
+  transform: scale(1.03);
+  background-color: floralwhite;
 }
 #menu {
   position: absolute;
