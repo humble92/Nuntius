@@ -44,6 +44,7 @@ body {
   height: 200px;
   border: 1px solid;
   margin:  0 1% 2% 2%;
+  overflow:hidden;
 }
 .msghead {
   width: 100%;
