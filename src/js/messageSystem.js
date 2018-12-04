@@ -40,9 +40,9 @@ btn.onclick = function() {
 }
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
+$(".modal-content span").on("click", function(e) {
+    modal.style.display = "none";
+});
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
