@@ -1,11 +1,11 @@
 # Nuntius
-An online platform aims at enhencing collaboration among teacher-parent-students.
+An online platform aims at solving current issue in education system, enhencing collaboration among teacher-parent-students.
 
 
 ## Getting Started
 
-The product of this project is a webapp. Go to https://nuntius-6e5fd.firebaseapp.com. You can register using your email or your google account. 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+The product of this project is a webapp. Go to https://nuntius-6e5fd.firebaseapp.com. You can register using your email or your google account. Features ease communication among teachers, parents and students are built.
+
 
 ### Prerequisites
 
@@ -17,36 +17,14 @@ browser and network.
 Any browser
 
 
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+User information is stored in and retrieved from firebase (https://nuntius-6e5fd.firebaseapp.com).
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [HTML5, CSS3, Javascript, Jquery, JSON]
+* [Firebase](http://www.dropwizard.io/1.0.2/docs/) - The web database, account ath used
 
 ## Contributing
 
@@ -54,20 +32,20 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+We use [firebase](https://nuntius-6e5fd.firebaseapp.com) for versioning. For the versions available, see the [NUNTIUS](https://github.com/humble92/Nuntius). 
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **David Li**
+* **Daniel Hwang** 
+* **Bryan Zhang**
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
-## License
+See also the list of [contributors](https://github.com/humble92/Nuntius/graphs/contributors) who participated in this project.
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* BCIT Project instructors: Carly Orr and Vidhi Shah	
+
