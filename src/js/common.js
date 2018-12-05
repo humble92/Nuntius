@@ -15,11 +15,12 @@ $( document ).ready(function() {
                 user.getIdToken().then(function(accessToken) {
                     
                     //Save user info in Session Storage
-                    var user = {'uid': uid, 'name':displayName, 'email':email};
-                    sessionStorage.setItem('user', JSON.stringify(user));
+                    var userInfo = {'uid': uid, 'name':displayName, 'email':email};
+                    sessionStorage.setItem('userInfo', JSON.stringify(user));
 
                 });
             } else {
+                sessionStorage.removeItem('userInfo');
                 // Page is redirected.
                 window.location.href='/';
             }
@@ -29,12 +30,13 @@ $( document ).ready(function() {
     };
     
     window.addEventListener('load', function() {
-        initApp()
+        initApp();
     });    
     
     $("#logout").on("click", function(e) {         // Logout button listener
         var promise = firebase.auth().signOut();          // Firebase Authenticated User Signout 
         promise.then(function(){
+            sessionStorage.removeItem('userInfo');
             window.location.href='/';
         });
     });

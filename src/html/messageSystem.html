@@ -6,14 +6,12 @@
 
     <link href="../css/messageSystem.css" rel="stylesheet">
     <link href="../css/header.css" rel="stylesheet">
-    <style></style>
 
-    <script src="https://www.gstatic.com/firebasejs/5.5.9/firebase-app.js"></script>    
-    <script src="https://www.gstatic.com/firebasejs/5.5.9/firebase-messaging.js"></script>    
-    <script src="https://www.gstatic.com/firebasejs/5.5.9/firebase-auth.js"></script>    
+    <script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>    
     <script src="../js/setup_firebase.js"></script>
     <script src="../js/jquery-3.3.1.min.js"></script>
     <script src="../js/common.js"></script>
+    <script src="../js/pagecommon.js"></script>
 
   </head>
 
@@ -47,9 +45,9 @@
 
       <div id="dropdown">
         <ul>
-          <li><a href="profile.html">Profile</a></li>
-          <li><a href="notimplemented.html">Account Setting</a></li>
-          <li><a href="login.html">Log Out</a></li>
+          <li id="profile"><a href="profile.html">Profile</a></li>
+          <li id="accountseting"><a href="notimplemented.html">Account Setting</a></li>
+          <li id="logout"><a href="login.html">Log Out</a></li>
         </ul>
       </div>
 
@@ -227,7 +225,7 @@
             </div>
           </div>
           <p>Global and regional conflicts that have been a powerful force in shaping our contemporary world and identities.
-<br>The development of political institutions are influenced by economic, social, ideological, and geographic factors.</p>
+          <br>The development of political institutions are influenced by economic, social, ideological, and geographic factors.</p>
         </div>
         
       </div>
@@ -235,14 +233,7 @@
         <div id="footer"><p>2018 CST Project1 Group7</p></div>
       </footer>
     </div> 
-
-
-
-
-
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-
     <script src="../js/messageSystem.js"></script>
-    <script src="../js/pagecommon.js"></script>
+
   </body>
 </html>

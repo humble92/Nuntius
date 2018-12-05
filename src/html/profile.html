@@ -50,9 +50,9 @@
        
        <div id="dropdown">
          <ul>
-           <li><a href="profile.html">Profile</a></li>
-           <li><a href="notimplemented.html">Account Setting</a></li>
-           <li><a href="login.html">Log Out</a></li>
+          <li id="profile"><a href="profile.html">Profile</a></li>
+          <li id="accountseting"><a href="notimplemented.html">Account Setting</a></li>
+          <li id="logout"><a href="login.html">Log Out</a></li>
          </ul>
        </div>
        
@@ -116,9 +116,9 @@
         //Both method are working
         
         //Method 1. using Session Storage
-        var user = JSON.parse(sessionStorage.user);
-        $("#name").val(user.name);
-        $("#email").val(user.email);
+        var userInfo = JSON.parse(sessionStorage.userInfo);
+        $("#name").val(userInfo.name);
+        $("#email").val(userInfo.email);
 
         //Firebase database updating
         $("#submit").on("click", function(e) {
@@ -138,7 +138,7 @@
         });
   
         //database reading (refresh)
-        var ref = firebase.database().ref("users/" + user.uid);
+        var ref = firebase.database().ref("users/" + userInfo.uid);
         ref.on(
             "value",   
             function(snap) {
