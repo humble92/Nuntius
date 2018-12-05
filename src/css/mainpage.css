@@ -114,6 +114,7 @@ body {
 }
 .more p {
   margin: 10px 5px 5px 5px;
+  padding-right: 5px;
 }
 .more:hover {
   color: yellow;
