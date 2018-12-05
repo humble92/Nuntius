@@ -4,7 +4,7 @@ An online platform aims at solving current issue in education system, enhencing 
 
 ## Getting Started
 
-The product of this project is a webapp. Go to https://nuntius-6e5fd.firebaseapp.com. You can register using your email or your google account. Features ease communication among teachers, parents and students are built.
+The product of this project is a webapp. Go to [NUNTIUS](https://nuntius-6e5fd.firebaseapp.com). You can register using your email or your google account. Features ease communication among teachers, parents and students are built.
 
 
 ### Prerequisites
@@ -23,12 +23,12 @@ User information is stored in and retrieved from firebase (https://nuntius-6e5fd
 
 ## Built With
 
-* [HTML5, CSS3, Javascript, Jquery, JSON]
-* [Firebase](http://www.dropwizard.io/1.0.2/docs/) - The firebase web database, account authentication, storage and hosting used
+* HTML5, CSS3, Javascript, Jquery, JSON
+* [Firebase](https://firebase.google.com/) - The firebase web database, account authentication, storage and hosting used
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [NUNTIUS.INSIGHT]https://github.com/humble92/Nuntius/pulse for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Versioning
 
