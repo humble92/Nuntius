@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>My Profile</title>
+
+    <link href="../css/header.css" rel="stylesheet">
+    <link href="../css/default.css" rel="stylesheet">
+    <link href="../css/mainpage.css" rel="stylesheet">
+    <link href="../css/responsive.css" rel="stylesheet">
+
+    <script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>    
+    <script src="../js/setup_firebase.js"></script>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/common.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Cookie|Kaushan+Script|Permanent+Marker|Ropa+Sans" rel="stylesheet">
+
+  </head>
+  
+  <body>
+    <div id="header">
+      <div id="menu-icon">
+        <div class="menu-bar"> </div>
+        <div class="menu-bar"> </div>
+        <div class="menu-bar"> </div>
+      </div>
+      <div id="userpic"  >
+      </div>  
+      
+          
+
+      <div id="logo">
+        <a href="main.html"><img src="../img/LOGO(new).png" alt="logo" width="120px" height="auto"></a>
+      </div>
+      
+      
+      
+    </div>
+    <div id="container">
+
+      <div id="menu">
+         <ul>
+           <li><a href="messageSystem.html">Message System</a></li>
+           <li><a href="performanceRecord.html" >Performance Record</a></li>
+           <li><a href="notimplemented.html">Student Grades</a></li>
+           <li><a href="notimplemented.html">Bookstore</a></li>
+           <li><a href="notimplemented.html">Library</a></li>
+           <li><a href="notimplemented.html">Group Study</a></li>
+         </ul>
+       </div>
+       
+       <div id="dropdown">
+         <ul>
+          <li id="profile"><a href="profile.html">Profile</a></li>
+          <li id="accountseting"><a href="notimplemented.html">Account Setting</a></li>
+          <li id="logout"><a href="login.html">Log Out</a></li>
+         </ul>
+       </div>
+       
+      <div id="content">
+        <div id="title">
+          <p>My profile</p>
+        </div>
+        <div>
+        <form id="profile">
+          <div class="col1">
+            <label for="name">Name:</label>
+          </div>
+          <div class="col2">
+            <input type="text" id="name" name="name" value="" readonly>
+          </div>
+          <div class="col1">
+            <label for="email">Email:</label>
+          </div>
+          <div class="col2">
+            <input type="email" id="email" name="email" value="" readonly>
+          </div>
+          <div class="col1">
+            <label for="phone">Phone:</label>
+          </div>
+          <div class="col2">
+            <input type="text" id="phone" name="phone" value="">
+          </div>
+          <div class="col1">
+            <label for="role">Role:</label>
+          </div>
+          <div class="col2">
+            <select id="role" name="role">
+              <option value="Select">--- Select a role ---</option>
+              <option value="Student">Student</option>
+              <option value="Parent">Parent</option>
+              <option value="Teacher">Teacher</option>
+            </select>
+          </div>
+          <div class="col2">
+            <label for="intro">Self-introduction:</label>
+          </div>
+          <div class="col2">
+            <textarea id="intro" name="intro" placeholder="Type here" style="height:100px"></textarea>
+          </div>
+          <div class="col2">
+            <input type="submit" id="submit" value="Submit">
+          </div>
+          
+        </form>          
+        <div class='notice' style='display:none'>Notice</div>
+        </div>
+
+      </div>
+    </div>
+    <footer>
+        <div id="footer"><p>2018 CST Project1 Group7</p></div>
+    </footer>
+    
+    <script src="../js/pagecommon.js" ></script>
+    <script>
+        //Both method are working
+        
+        //Method 1. using Session Storage
+        var userInfo = JSON.parse(sessionStorage.userInfo);
+        $("#name").val(userInfo.name);
+        $("#email").val(userInfo.email);
+
+        //Firebase database updating
+        $("#submit").on("click", function(e) {
+            ref.update({
+               phone: $("#phone").val(),
+               role: $("#role").val(),
+               intro: $("#intro").val()
+            }, function(error) {
+                if (error) {
+                    $('.notice').html("Something wrong happend. Try again!");
+                } else {
+                    $('.notice').html("Successfuly Updated!");
+                }
+                $('.notice').fadeIn(400).delay(5000).fadeOut(400);
+            }).then(function(){
+            });
+        });
+  
+        //database reading (refresh)
+        var ref = firebase.database().ref("users/" + userInfo.uid);
+        ref.on(
+            "value",   
+            function(snap) {
+                //console.log(JSON.stringify(snap.val()));
+                
+                //"" handling
+                var phone_val;
+                if((JSON.stringify(snap.val().phone))) {
+                    phone_val = (JSON.stringify(snap.val().phone)).replace(/['"]+/g, '');
+                }
+                
+                var role_val;
+                if((JSON.stringify(snap.val().role))) {
+                    role_val = (JSON.stringify(snap.val().role)).replace(/['"]+/g, '');
+                }
+                
+                var intro_val;
+                if((JSON.stringify(snap.val().intro))) {
+                    intro_val = (JSON.stringify(snap.val().intro)).replace(/['"]+/g, '');
+                }
+                
+                $("#name").val(JSON.stringify(snap.val().name));
+                $("#email").val(JSON.stringify(snap.val().email));
+                $("#phone").val(phone_val);
+                $("#role").val(role_val);
+                $("#intro").val(intro_val);
+        });
+        
+    </script>
+        
+    
+  </body>
+
+</html>

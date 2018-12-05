@@ -13,25 +13,16 @@ $( document ).ready(function() {
                 var phoneNumber = user.phoneNumber;
                 var providerData = user.providerData;
                 user.getIdToken().then(function(accessToken) {
-                    document.getElementById('sign-in-status').textContent = 'Signed in';
-                    document.getElementById('sign-in').textContent = 'Sign out';
-                    document.getElementById('#profile').textContent = JSON.stringify({
-                        displayName: displayName,
-                        email: email,
-                        //emailVerified: emailVerified,
-                        //phoneNumber: phoneNumber,
-                        //photoURL: photoURL,
-                        //uid: uid,
-                        //accessToken: accessToken,
-                        //providerData: providerData
-                    }, null, '  ');
+                    
+                    //Save user info in Session Storage
+                    var userInfo = {'uid': uid, 'name':displayName, 'email':email};
+                    sessionStorage.setItem('userInfo', JSON.stringify(user));
+
                 });
             } else {
+                sessionStorage.removeItem('userInfo');
+                // Page is redirected.
                 window.location.href='/';
-                // User is signed out.
-                //document.getElementById('sign-in-status').textContent = 'Signed out';
-                //document.getElementById('sign-in').textContent = 'Sign in';
-                //document.getElementById('account-details').textContent = null;
             }
         }, function(error) {
             console.log(error);
@@ -39,12 +30,13 @@ $( document ).ready(function() {
     };
     
     window.addEventListener('load', function() {
-        initApp()
+        initApp();
     });    
     
     $("#logout").on("click", function(e) {         // Logout button listener
         var promise = firebase.auth().signOut();          // Firebase Authenticated User Signout 
         promise.then(function(){
+            sessionStorage.removeItem('userInfo');
             window.location.href='/';
         });
     });

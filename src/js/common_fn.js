@@ -14,8 +14,13 @@ $( document ).ready(function() {
                 var providerData = user.providerData;
                 user.getIdToken().then(function(accessToken) {
 
+                    //Save user info in Session Storage
+                    var userInfo = {'uid': uid, 'name':displayName, 'email':email};
+                    sessionStorage.setItem('userInfo', JSON.stringify(user));
+                    
                 });
             } else {
+                sessionStorage.removeItem('userInfo');
                 window.location.href='/';
                 // User is signed out.
                 //document.getElementById('sign-in-status').textContent = 'Signed out';
@@ -28,12 +33,13 @@ $( document ).ready(function() {
     };
     
     window.addEventListener('load', function() {
-        initApp()
+        initApp();
     });    
     
-    $("#userpic").on("click", function(e) {         // Logout button listener
+    $("#logout").on("click", function(e) {         // Logout button listener
         var promise = firebase.auth().signOut();          // Firebase Authenticated User Signout 
         promise.then(function(){
+            sessionStorage.setItem('user');
             window.location.href='/';
         });
     });
