@@ -1,20 +1,20 @@
 # Nuntius
-An online platform aims at solving current issue in education system, enhencing collaboration among teacher-parent-students.
+An online platform aims at solving current issue in education system, enhancing collaboration among teacher-parent-student.
 
 
 ## Getting Started
 
-The product of this project is a webapp. Go to [NUNTIUS](https://nuntius-6e5fd.firebaseapp.com). You can register using your email or your google account. Features ease communication among teachers, parents and students are built.
+The product of this project is a webapp. Go to [NUNTIUS](https://nuntius-6e5fd.firebaseapp.com). You can register using your email or your google account. Features for ease communication among teachers, parents and students are being built.
 
 
 ### Prerequisites
 
-browser and network.
+Any browser and network.
 
 
 ### Installing
 
-Any browser
+Not needed.
 
 
 ## Deployment
@@ -28,11 +28,11 @@ User information is stored in and retrieved from firebase (https://nuntius-6e5fd
 
 ## Contributing
 
-Please read [NUNTIUS.INSIGHT]https://github.com/humble92/Nuntius/pulse for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [NUNTIUS.INSIGHT](https://github.com/humble92/Nuntius/pulse) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Versioning
 
-We use [firebase](https://nuntius-6e5fd.firebaseapp.com) for versioning. For the versions available, see the [NUNTIUS](https://github.com/humble92/Nuntius). 
+We use [github](https://github.com/humble92/Nuntius/commits/master) for versioning. For the versions available, see the [NUNTIUS](https://github.com/humble92/Nuntius). 
 
 ## Authors
 
