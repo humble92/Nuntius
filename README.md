@@ -24,7 +24,7 @@ User information is stored in and retrieved from firebase (https://nuntius-6e5fd
 ## Built With
 
 * [HTML5, CSS3, Javascript, Jquery, JSON]
-* [Firebase](http://www.dropwizard.io/1.0.2/docs/) - The web database, account ath used
+* [Firebase](http://www.dropwizard.io/1.0.2/docs/) - The firebase web database, account authentication, storage and hosting used
 
 ## Contributing
 
