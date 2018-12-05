@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <title>Email</title>
 <link href="../css/email.css" rel="stylesheet">
+<link href="../css/responsive.css" rel="stylesheet">
 
 <script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>    
 <script src="../js/setup_firebase.js"></script>
@@ -50,9 +51,15 @@
     </div>
     <div class="row">
       <input type="submit" value="Submit">
+      <input type="button" id="cancel" name="cancel" value="Cancel">
     </div>
   </form>
 </div>
-
+<script>
+    $("#cancel").on("click", function(e) {
+        //window.history.back();
+        window.location.href='/html/messageSystem.html';
+    });    
+</script>
 </body>
 </html>

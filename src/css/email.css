@@ -28,6 +28,17 @@ input[type=submit] {
     float: right;
 }
 
+input[type=button] {
+    background-color: #af4c91;
+    color: white;
+    padding: 12px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
 input[type=submit]:hover {
     background-color: #45a049;
 }

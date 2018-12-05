@@ -1,0 +1,56 @@
+@media (max-width: 1228px) {
+    #menu {
+        font-size: 14pt;
+    }
+}
+
+@media (max-width: 1160px) {
+    #menu {
+        font-size: 13pt;
+    }
+}
+
+@media (max-width: 1070px) {
+    #menu {
+        font-size: 12pt;
+    }
+}
+
+@media (max-width: 980px) {
+    #menu {
+        font-size: 11pt;
+    }
+    #content {
+        width: 82%;
+    }
+    #header {
+        height: 90px;
+    }
+}
+
+@media (max-width: 910px) {
+    #menu {
+        font-size: 10pt;
+    }
+}
+
+@media (max-width: 840px) {
+    #menu {
+        font-size: 9pt;
+        width: 14%;
+    }
+}
+
+@media (max-width: 735px) {
+    #menu {
+        width: 15%;
+    }
+    #content {
+        width: 84%;
+    }
+}
+
+@media (max-width: 600px) {
+    body, #message { margin-top: 0; background: white; box-shadow: none; }
+    body { border-top: 16px solid #ffa100; }
+}
